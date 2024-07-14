@@ -1,0 +1,10 @@
+pylint==2.7.2
+pytest==6.2.2
+black==23.3.0
+fastapi
+uvicorn
+numpy
+pandas
+matplotlib
+torch
+scikit-learn
