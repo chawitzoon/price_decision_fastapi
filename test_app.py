@@ -41,7 +41,7 @@ def test_divide(client):
     assert response.json() == {"result": 0.5}
 
 
-# def test_predict_next_price(client):
-#     response = client.get("/predict_next_price/120/121.4/126.9/128.0/127.8/129.1/130.1")
-#     assert response.status_code == 200
-#     assert response.json() == {"result": 119.99357}
+def test_predict_next_price(client):
+    response = client.get("/predict_next_price/120/121.4/126.9/128.0/127.8/129.1/130.1")
+    assert response.status_code == 200
+    assert response.json() == {"result": 119.99357}
