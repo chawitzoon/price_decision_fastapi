@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 import uvicorn
-import numpy as np
-from mlib.mlib import predict
+# import numpy as np
+# from mlib.mlib import predict
 
 app = FastAPI()
 
@@ -35,22 +35,22 @@ async def divide(num1: int, num2: int):
     return {"result": total}
 
 
-# test as get method firstly
-@app.get(
-    "/predict_next_price/{price1}/{price2}/{price3}/{price4}/{price5}/{price6}/{price7}"
-)
-async def predict_next_price(
-    price1: float,
-    price2: float,
-    price3: float,
-    price4: float,
-    price5: float,
-    price6: float,
-    price7: float,
-):
-    input_prices = np.array([[price1, price2, price3, price4, price5, price6, price7]])
-    next_price_predicted = predict(input_prices)
-    return {"result": round(float(next_price_predicted), 5)}
+# # test as get method firstly
+# @app.get(
+#     "/predict_next_price/{price1}/{price2}/{price3}/{price4}/{price5}/{price6}/{price7}"
+# )
+# async def predict_next_price(
+#     price1: float,
+#     price2: float,
+#     price3: float,
+#     price4: float,
+#     price5: float,
+#     price6: float,
+#     price7: float,
+# ):
+#     input_prices = np.array([[price1, price2, price3, price4, price5, price6, price7]])
+#     next_price_predicted = predict(input_prices)
+#     return {"result": round(float(next_price_predicted), 5)}
 
 
 if __name__ == "__main__":
