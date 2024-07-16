@@ -87,3 +87,11 @@ note: the prediction endpoint is tested as GET request for simplicity for now.
 <img width="1792" alt="aws_project_outline" src="image_readme\aws_fastapi_example.png"> -->
 
 ## Future Work
+
+## note cli command
+
+python cli.py --prices "1.1,2.2,3.3,4.4,5.5,6.6,7.7"
+
+python utilscli.py retrain --tsize 0.2
+
+python utilscli.py predict --prices "1.1,2.2,3.3,4.4,5.5,6.6,7.7" --host "http://localhost:8080/predict_next_price"
