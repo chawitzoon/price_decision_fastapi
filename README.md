@@ -78,8 +78,8 @@ Technologies Used:
 
 ## Snipshot of service used
 
-<!-- ### Github Action
-<img width="1792" alt="price_decision_fastapi_project_outline" src="image_readme\github_action.png"> -->
+### Github Action
+<img width="1792" alt="price_decision_fastapi_project_github_action" src="image_readme\price_decision_fastapi_github_action.png">
 
 ### Docker Hub
 <img width="1792" alt="price_decision_fastapi_project_dockerhub" src="image_readme\price_decision_fastapi_dockerhub.png">
@@ -87,9 +87,9 @@ Technologies Used:
 ### Azure App Service
 <img width="1792" alt="price_decision_fastapi_project_azure_app_service" src="image_readme\price_decision_fastapi_project_azure_app_service.png">
 
-<!-- ### FastAPI
+### FastAPI
 the prediction POST request endpoint
-<img width="1792" alt="aws_project_outline" src="image_readme\aws_fastapi_example.png"> -->
+<img width="1792" alt="price_decision_fastapi_example" src="image_readme\price_decision_fastapi_example.png.png">
 
 ## Future Work
 
