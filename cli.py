@@ -2,15 +2,15 @@ import click
 from mlib.mlib import predict
 import numpy as np
 
-def parse_prices(ctx, param, value):
+def parse_prices(_ctx, _param, value):
     try:
         # Split the string by commas and convert to a list of floats
         prices = [float(x) for x in value.split(',')]
         if len(prices) != 7:
             raise click.BadParameter("Exactly 7 prices are required.")
         return prices
-    except ValueError:
-        raise click.BadParameter("Prices should be a list of floats.")
+    except ValueError as e:
+        raise click.BadParameter("Prices should be a list of floats.") from e
 
 @click.command()
 @click.option(
